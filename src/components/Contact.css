@@ -1,0 +1,24 @@
+/* Initial hidden state for both title and email */
+.hidden-text, .hidden-email {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+/* Animation class for text and email */
+.animate-text, .animate-email {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+/* Optionally add more smoothness for the email animation */
+.animate-email {
+  transition-delay: 0.2s; /* Slight delay for the email */
+}
+
+/* Optional additional styling to make the email look better */
+a {
+  text-decoration: none;
+  color: inherit;
+}
